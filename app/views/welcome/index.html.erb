@@ -1,0 +1,28 @@
+<p>
+  <%= link_to 'Português', root_path(locale: 'pt-BR') %>
+  <%#= link_to 'Português', '/?locale=pt-BR' %>
+</p>
+<p>
+  <%= link_to 'English', root_path(locale: 'en') %>
+  <%#= link_to 'English', '/?locale=en' %>
+</p>
+
+<h1>Seja-Bem Vindo!</h1>
+
+<p>O idioma usado nessa aplicação é: <strong><%= locale %></strong>. Utilizando Helper</p>
+<p>O idioma usado nessa aplicação é: <strong><%= t('actual_locale') %></strong>. Utilizando I18n</p>
+
+<p>Data: <strong><%= I18n.l(Date.today) %></strong></p>
+
+
+<%= render "menu" %>
+
+<p>
+  Você esta em ambiente de <strong><%= ambiente_rails %></strong>
+</p>
+<p>
+  Eu sou a variavel de instância <strong><%= @meu_nome %></strong>
+</p>
+<p>
+  Estou estudando <strong><%= @curso %></strong>
+</p>

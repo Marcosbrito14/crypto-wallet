@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CryptoWallet</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag params[:controller], "data-turbo-track": "reload" %>
+
+    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
+    <%#= javascript_include_tag "jquery", "data-turbo-track": "reload", defer: true %>
+    <%#= javascript_include_tag "notify", "data-turbo-track": "reload", defer: true %>
+    <%#= javascript_include_tag params[:controller], "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body>
+<!--Mostra qual o controller passo -->
+    <h1>CABEÇALHO - <%= params[:controller] %></h1>
+    <%= yield %>
+      <h1>RODAPÉ</h1>
+
+
+  </body>
+</html>

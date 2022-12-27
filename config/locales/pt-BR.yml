@@ -1,0 +1,18 @@
+pt-BR:
+  actual_locale: "Portugues do Brasil"
+  title:
+    coin: Moedas
+    editing_coin: Editar Moeda
+    new_coin: Nova Moeda
+    mining_type: Tipos de Mineração
+    editing_mining_type: Editar tipo de Mineração
+    new_mining_type: Novo Tipo de Mineração
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"
+    confirmation: 'Tem certeza?'
+    new_coin: "Nova Moeda"
+    back: "Voltar"
+    show_mining_type: "Mostrar Tipo de Mineração"
+    new_mining_type: "Novo Tipo de Mineração"
