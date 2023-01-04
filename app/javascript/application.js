@@ -2,11 +2,14 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-// import jQuery from "jquery"
-// //import "notifyjs"
-//
-// window.$ = jQuery
+import jquery from "jquery"
+window.jQuery = jquery
+window.$ = jquery
+
+import * as notifyjs from "notifyjs"
+window.$.notifyjs=notifyjs
+
+import * as bootstrap from "bootstrap"
 
 
-//<% msg = Time.now.hour < 12 ? "Bom dia!" : "Ola´!!!" %>
-//alert("<%= msg %>");
+//window.$ = jQuery

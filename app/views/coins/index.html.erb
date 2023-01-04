@@ -2,20 +2,22 @@
 <%= data_br(Date.today) %>
 <h1><%= t('title.coin') %></h1>
 
-<h2><%= cookies[:curso] %></h2>
-<h2><%= session[:curso] %></h2>
+<!--
+<h2><%#= cookies[:curso] %></h2>
+<h2><%#= session[:curso] %></h2>
+-->
 
 <div id="coins">
   <% @coins.each do |coin| %>
     <%= render coin %>
     <p>
-      <%= link_to t("links.edit"), coin %> |
-      <%= link_to t("links.show"), edit_coin_path(coin) %> |
-      <%= link_to t("links.delete"), coin, method: :delete, data: {confirm: t("links.confirmation")} %>
+      <%= link_to t("links.edit"), coin, class:"btn btn-secondary" %> |
+      <%= link_to t("links.show"), edit_coin_path(coin), class:"btn btn-success" %> |
+      <%= link_to t("links.delete"), coin, method: :delete, data: {confirm: t("links.confirmation")}, class:"btn btn-danger" %>
     </p>
   <% end %>
 </div>
 <br>
 <br>
-<%= link_to t("links.new_coin"), new_coin_path %> |
-<%= link_to t("links.back"), welcome_index_path %>
+<%= link_to t("links.new_coin"), new_coin_path, class:"btn btn-primary" %> |
+<%= link_to t("links.back"), welcome_index_path, class:"btn btn-warning" %>

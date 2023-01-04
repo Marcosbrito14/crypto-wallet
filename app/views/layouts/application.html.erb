@@ -9,18 +9,24 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag params[:controller], "data-turbo-track": "reload" %>
 
-    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
-    <%#= javascript_include_tag "jquery", "data-turbo-track": "reload", defer: true %>
-    <%#= javascript_include_tag "notify", "data-turbo-track": "reload", defer: true %>
-    <%#= javascript_include_tag params[:controller], "data-turbo-track": "reload", defer: true %>
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
-<!--Mostra qual o controller passo -->
-    <h1>CABEÇALHO - <%= params[:controller] %></h1>
-    <%= yield %>
-      <h1>RODAPÉ</h1>
+    <div class="container-fluid" >
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <%= link_to 'Potuguês', root_path(locale: 'pt-BR'), class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'English', root_path(locale: 'en'), class:"nav-link" %>
+        </li>
+      </ul>
+  <!--Mostra qual o controller passo
+      <h1>CABEÇALHO - <%#= params[:controller] %></h1>
+                                                     -->
+      <%= yield %>
 
-
+    </div>
   </body>
 </html>

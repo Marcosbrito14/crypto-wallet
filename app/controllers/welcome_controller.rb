@@ -8,3 +8,4 @@ class WelcomeController < ApplicationController
     @curso = params[:curso]
   end
 end
+#SHA256:xNLWEwxKWobzPDVs0YX/NhuRUQk2DWrB7LGFHpXmyRo marcoslbrito@hotmail.com

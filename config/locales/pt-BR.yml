@@ -1,6 +1,12 @@
 pt-BR:
   actual_locale: "Portugues do Brasil"
+  #welcome: 'Seja Bem-Vindo!'
+    #msg: Este é o Crypto Wallet, uma app para você cadastrar e acompanhar suas criptos moedas.
+    #start: "Para começar, selecione uma das opções abaixo:"
   title:
+    welcome: 'Seja Bem-Vindo!'
+    msg: Este é o Crypto Wallet, uma app para você cadastrar e acompanhar suas criptos moedas.
+    start: "Para começar, selecione uma das opções abaixo:"
     coin: Moedas
     editing_coin: Editar Moeda
     new_coin: Nova Moeda
