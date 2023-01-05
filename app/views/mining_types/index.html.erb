@@ -6,7 +6,7 @@
   <% @mining_types.each do |mining_type| %>
     <%= render mining_type %>
     <p>
-      <%= link_to t('links.show_mining_type'), mining_type %>
+      <%= link_to t('links.show_mining_type'), mining_type, class:"btn btn-success" %>
     </p>
   <% end %>
 </div>

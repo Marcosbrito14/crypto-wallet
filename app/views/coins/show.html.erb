@@ -1,10 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @coin %>
-
+<br>
 <div>
-  <%= link_to t('links.edit'), edit_coin_path(@coin) %> |
-  <%= link_to t('links.back'), coins_path %>
-
-  <%= button_to t('links.delete'), @coin, method: :delete %>
+  <%= link_to t('links.edit'), edit_coin_path(@coin), class:"btn btn-secondary" %> |
+  <%= link_to t('links.back'), coins_path, class:"btn btn-warning" %>
+  <br>
+  <br>
+  <%= button_to t('links.delete'), @coin, method: :delete, class:"btn btn-danger" %>
 </div>

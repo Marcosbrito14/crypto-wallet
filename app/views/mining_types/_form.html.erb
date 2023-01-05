@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+  <div class="form-group">
+    <%= form.label :description %>
+    <%= form.text_field :description, class:"form-control", placeholder:"Mineração" %>
   </div>
 
-  <div>
-    <%= form.label :acronym, style: "display: block" %>
-    <%= form.text_field :acronym %>
+  <div class="form-group">
+    <%= form.label :acronym %>
+    <%= form.text_field :acronym, class:"form-control", placeholder:"Sigla" %>
   </div>
-
-  <div>
-    <%= form.submit %>
+  <br>
+  <div class="actions">
+    <%= form.submit nil, class:"btn btn-primary" %>
   </div>
 <% end %>
