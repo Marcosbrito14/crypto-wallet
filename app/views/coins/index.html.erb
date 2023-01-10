@@ -13,7 +13,7 @@
     <p>
       <%= link_to t("links.edit"), coin, class:"btn btn-secondary" %> |
       <%= link_to t("links.show"), edit_coin_path(coin), class:"btn btn-success" %> |
-      <%= link_to t("links.delete"), coin, method: :delete, data: {confirm: t("links.confirmation")}, class:"btn btn-danger" %>
+      <%= link_to t("links.delete"), coin, method: :delete, form: { data: { turbo_confirm: t("links.confirmation")}}, class:"btn btn-danger" %>
     </p>
   <% end %>
 </div>

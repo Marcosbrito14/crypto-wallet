@@ -4,7 +4,7 @@ module ApplicationHelper
   end
 
   def data_br(data_usa)
-      data_usa.strftime("%d/%m/%Y")
+      I18n.locale == :en ? data_usa : data_usa.strftime("%d/%m/%Y")
   end
 
   def ambiente_rails
