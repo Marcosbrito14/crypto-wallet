@@ -11,13 +11,17 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2022_11_29_232554) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+  enable_extension "timescaledb"
+
   create_table "coins", force: :cascade do |t|
     t.string "description"
     t.string "acronym"
     t.string "url_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "mining_type_id"
+    t.bigint "mining_type_id"
     t.index ["mining_type_id"], name: "index_coins_on_mining_type_id"
   end
 
